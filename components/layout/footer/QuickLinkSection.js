@@ -3,7 +3,7 @@ import CustomImage from "@/components/CustomImage"
 export default function QuickLinkSection() {
     return (
         <div className="quicklink-section px-4">
-            <div>
+            <div className="py-4">
                 <h2 className="text-white text-2xl font-semibold py-2">
                     Our Services
                 </h2>
