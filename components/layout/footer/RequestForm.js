@@ -29,7 +29,7 @@ const FormField = ({ fieldTitle, fieldType, fieldName, fieldLabel }) => {
     if (fieldType == "text") {
         return (
             <div className="space-y-1 w-full">
-                <label for={fieldLabel} className="text-theme-dark text-2xl font-semibold capitalize">{fieldTitle}</label>
+                <label htmlFor={fieldLabel} className="text-theme-dark text-2xl font-semibold capitalize">{fieldTitle}</label>
                 <textarea 
                 type={fieldType} 
                 name={fieldName} 
@@ -41,7 +41,7 @@ const FormField = ({ fieldTitle, fieldType, fieldName, fieldLabel }) => {
     } else {
         return (
             <div className="space-y-1 w-full">
-                <label for={fieldLabel} className="text-theme-dark text-2xl font-semibold capitalize">{fieldTitle}</label>
+                <label htmlFor={fieldLabel} className="text-theme-dark text-2xl font-semibold capitalize">{fieldTitle}</label>
                 <input 
                 type={fieldType} 
                 name={fieldName} 
