@@ -2,6 +2,7 @@ import React from "react"
 import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from 'keen-slider/react'
 import FooterSlide from "../FooterSlide"
+import RequestForm from "./RequestForm"
 import QuickLinkSection from "./QuickLinkSection"
 import CopyrightSection from "./CopyrightSection"
 
@@ -34,6 +35,7 @@ export default function Footer() {
     return (
         <footer>
             <div className="h-10 bg-theme-dark">
+              <RequestForm />
                 <div ref={sliderRef} className="keen-slider py-4 bg-theme-light">
                     <FooterSlide />
                     <FooterSlide />

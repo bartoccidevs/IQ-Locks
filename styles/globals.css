@@ -5,6 +5,7 @@
 :root {
   --theme-dark: rgb(6 95 70);
   --theme-light: rgb(167 243 208);
+  --theme-highlight: #ffffff;
 }
 
 /* BASE SETTING START */
@@ -21,7 +22,7 @@ body {
   z-index: 2;
 }
 .main-page {
-  min-height: 180vh;
+  min-height: 40vh;
 }
 .hamburger-menu, ::before, ::after {
   height: 0.25rem;
@@ -60,6 +61,14 @@ body {
   border-left-style: none;
   border-bottom-style: none;
   border-color: white;
+}
+footer .keen-slider {
+  border-top-style: solid;
+  border-right-style: none;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-width: 0.1rem;
+  border-color: var(--theme-dark);
 }
 /* FOOTER END */
 

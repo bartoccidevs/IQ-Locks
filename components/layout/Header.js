@@ -4,7 +4,8 @@ import { useState } from "react"
 const navlinks = [
     { lable: 'Home', link: "/" },
     { lable: "About", link: "/about" },
-    { lable: "Blog", link: "/blog" }
+    { lable: "Blog", link: "/blog" },
+    { lable: "Contact", link: "/contact" },
 ]
 
 export default function Header() {
