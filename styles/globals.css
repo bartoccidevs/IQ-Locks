@@ -3,19 +3,64 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --theme-dark: rgb(6 95 70);
+  --theme-light: rgb(167 243 208);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* BASE SETTING START */
+* {
+  padding: 0px;
+  margin: 0px;
 }
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--theme-dark);
 }
+/* BASE SETTING END */
+
+.navbar {
+  z-index: 2;
+}
+.main-page {
+  min-height: 180vh;
+}
+.hamburger-menu, ::before, ::after {
+  height: 0.25rem;
+  width: 3rem;
+  border-radius: 0.25rem;
+  transition: all 0.5s ease-in-out;
+}
+.hamburger-menu {
+  box-shadow: 0 2px 5px rgb(255, 101, 47, 0.2);
+}
+.hamburger-menu::before, ::after{
+  position: absolute;
+  box-shadow: 5px;
+}
+.hamburger-side-bar, .active-hamburger-side-bar {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+}
+.hovering-phone {
+  z-index: 3;
+}
+.hamburger-side-bar {
+  transform: translatey(-100%);
+}
+.hovering-phone {
+  z-index: 0;
+  transition: all 0.5s ease-in-out;
+  border: 0.1rem solid var(--theme-light);
+}
+
+/* FOOTER START */
+.copyright-section {
+  border-width: 0.125rem;
+  border-top-style: solid;
+  border-right-style: none;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-color: var(--theme-light);
+}
+/* FOOTER END */
