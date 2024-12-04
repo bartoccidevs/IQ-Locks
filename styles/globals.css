@@ -48,6 +48,9 @@ body {
 .hamburger-side-bar {
   transform: translatey(-100%);
 }
+.active-hamburger-side-bar, .hamburger-side-bar {
+  z-index: 1;
+}
 .hovering-phone {
   z-index: 0;
   transition: all 0.5s ease-in-out;
@@ -62,5 +65,8 @@ body {
   border-left-style: none;
   border-bottom-style: none;
   border-color: var(--theme-light);
+}
+.keen-slider {
+  z-index: 0;
 }
 /* FOOTER END */
