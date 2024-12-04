@@ -2,8 +2,8 @@ import CustomImage from "@/components/CustomImage"
 
 export default function QuickLinkSection() {
     return (
-        <div className="quicklink-section px-4">
-            <div className="py-4">
+        <div className="quicklink-section px-4 space-y-4">
+            <div className="pt-4">
                 <h2 className="text-white text-2xl font-semibold py-2">
                     Our Services
                 </h2>
@@ -14,6 +14,18 @@ export default function QuickLinkSection() {
                     <p>24/7 Emergency Locksmith</p>
                     <p>Windows and Doors</p>
                     <p>Security Systems</p>
+                </div>
+            </div>
+            <div className="">
+                <h2 className="text-white text-2xl font-semibold py-2">
+                    Service Areas
+                </h2>
+                <div className="space-y-1 text-theme-light text-1xl">
+                    <p>Manhattan, NY</p>
+                    <p>Brooklyn, NY</p>
+                    <p>The Bronx, NY</p>
+                    <p>Queens, NY</p>
+                    <p>Staten Island, NY</p>
                 </div>
             </div>
             <div>
