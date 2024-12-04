@@ -9,7 +9,7 @@ const formFields = [
 
 export default function RequestForm() {
     return( 
-        <form className="bg-theme-highlight py-8 px-4 space-y-3 flex flex-col">
+        <form className="bg-theme-highlight py-8 px-4 md:px-16 space-y-3 flex flex-col">
             {formFields.map((field,i) => (
                 <FormField 
                 fieldTitle={field.fieldTitle}
@@ -19,7 +19,7 @@ export default function RequestForm() {
                 key={i}/>
                 
             ))}
-            <input type="submit" className="ml-auto capitalize bg-theme-dark text-white text-2xl font-bold p-3 rounded drop-shadow-2xl" value="Submit"/>
+            <input type="submit" className="ml-auto capitalize bg-theme-dark text-theme-highlight text-2xl font-bold p-3 rounded drop-shadow-2xl" value="Submit"/>
         </form>
     )
 }

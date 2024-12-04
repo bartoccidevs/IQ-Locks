@@ -2,9 +2,9 @@ import CustomImage from "@/components/CustomImage"
 
 export default function QuickLinkSection() {
     return (
-        <div className="quicklink-section px-4 space-y-4">
+        <div className="quicklink-section px-4 md:px-16 space-y-4">
             <div className="pt-4">
-                <h2 className="text-white text-2xl font-semibold py-2">
+                <h2 className="text-theme-highlight text-2xl font-semibold py-2">
                     Our Services
                 </h2>
                 <div className="space-y-1 text-theme-light text-1xl">
@@ -17,7 +17,7 @@ export default function QuickLinkSection() {
                 </div>
             </div>
             <div className="">
-                <h2 className="text-white text-2xl font-semibold py-2">
+                <h2 className="text-theme-highlight text-2xl font-semibold py-2">
                     Service Areas
                 </h2>
                 <div className="space-y-1 text-theme-light text-1xl">
@@ -29,7 +29,7 @@ export default function QuickLinkSection() {
                 </div>
             </div>
             <div className="">
-                <h2 className="text-white text-2xl font-semibold py-2">
+                <h2 className="text-theme-highlight text-2xl font-semibold py-2">
                     Resources
                 </h2>
                 <div className="space-y-1 text-theme-light text-1xl">
@@ -40,7 +40,7 @@ export default function QuickLinkSection() {
                 </div>
             </div>
             <div>
-                <h2 className="text-white text-2xl font-semibold py-2">
+                <h2 className="text-theme-highlight text-2xl font-semibold py-2">
                     Find Us
                 </h2>
                 <div className="flex">

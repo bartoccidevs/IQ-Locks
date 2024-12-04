@@ -60,7 +60,7 @@ body {
   border-right-style: none;
   border-left-style: none;
   border-bottom-style: none;
-  border-color: white;
+  border-color: var(--theme-highlight);
 }
 footer .keen-slider {
   border-top-style: solid;
@@ -73,9 +73,8 @@ footer .keen-slider {
 /* FOOTER END */
 
 /* HOVERABLES START */
-.hovering-phone {
-  z-index: 0;
+.hovering-phone, .hovering-email{
   transition: all 0.5s ease-in-out;
-  border: 0.1rem solid white;
+  border: 0.1rem solid var(--theme-highlight);
 }
 /* HOVERABLES END */

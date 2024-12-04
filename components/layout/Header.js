@@ -17,7 +17,7 @@ export default function Header() {
     return (
         <header>
             <div className="navbar fixed w-full bg-theme-dark">
-                <div className="nav-container py-4 mx-4 flex justify-between items-center">
+                <div className="nav-container py-4 px-4 md:px-16 flex justify-between items-center">
                     <a href="/">
                         <CustomImage src="/assets/icons/logo.svg" className="h-12 w-12 cursor-pointer" alt="logo"/>
                     </a>
