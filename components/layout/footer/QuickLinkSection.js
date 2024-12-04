@@ -28,6 +28,17 @@ export default function QuickLinkSection() {
                     <p>Staten Island, NY</p>
                 </div>
             </div>
+            <div className="">
+                <h2 className="text-white text-2xl font-semibold py-2">
+                    Resources
+                </h2>
+                <div className="space-y-1 text-theme-light text-1xl">
+                    <p>Home</p>
+                    <p>About</p>
+                    <p>Our Blog</p>
+                    <p>Contact</p>
+                </div>
+            </div>
             <div>
                 <h2 className="text-white text-2xl font-semibold py-2">
                     Find Us
