@@ -18,13 +18,13 @@ export default function Header() {
             <div className="navbar fixed w-full bg-theme-dark">
                 <div className="nav-container py-4 mx-4 flex justify-between items-center">
                     <a href="/">
-                        <CustomImage src="/assets/icons/logo.svg" className="h-16 w-16 cursor-pointer" alt="logo"/>
+                        <CustomImage src="/assets/icons/logo.svg" className="h-12 w-12 cursor-pointer" alt="logo"/>
                     </a>
                     <div onClick={handleHamburgerClick} className="cursor-pointer">
                         <div className="
                         hamburger-menu bg-theme-light
-                        before:-translate-y-4 before:bg-theme-light
-                        after:translate-y-4 after:bg-theme-light" 
+                        before:-translate-y-3 before:bg-theme-light
+                        after:translate-y-3 after:bg-theme-light" 
                         />
                     </div>
                 </div>
