@@ -44,11 +44,11 @@ export default function QuickLinkSection() {
                     Find Us
                 </h2>
                 <div className="flex">
-                    <CustomImage src="/assets/icons/instagram.svg" className="h-8 w-8 mr-3 mb-4"/>
-                    <CustomImage src="/assets/icons/twitter.svg" className="h-8 w-8 mr-3 mb-4"/>
-                    <CustomImage src="/assets/icons/facebook.svg" className="h-8 w-8 mr-3 mb-4"/>
-                    <CustomImage src="/assets/icons/linkedin.svg" className="h-8 w-8 mr-3 mb-4"/>
-                    <CustomImage src="/assets/icons/youtube.svg" className="h-8 w-8 mr-3 mb-4"/>
+                    <CustomImage src="/assets/icons/instagram.svg" className="h-8 w-8 mr-3 mb-4" alt="instagram logo link"/>
+                    <CustomImage src="/assets/icons/twitter.svg" className="h-8 w-8 mr-3 mb-4" alt="twitter logo link"/>
+                    <CustomImage src="/assets/icons/facebook.svg" className="h-8 w-8 mr-3 mb-4" alt="facebook logo link"/>
+                    <CustomImage src="/assets/icons/linkedin.svg" className="h-8 w-8 mr-3 mb-4" alt="linked in logo link"/>
+                    <CustomImage src="/assets/icons/youtube.svg" className="h-8 w-8 mr-3 mb-4" alt="youtube logo link"/>
                 </div>
             </div>
         </div>

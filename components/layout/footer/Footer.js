@@ -24,7 +24,7 @@ export default function Footer() {
                 s.moveToIdx(s.track.details.abs + 5, true, animation)
               },
           slideChanged() {
-            console.log('slide changed')
+            // console.log('slide changed')
           },
         },
         [
