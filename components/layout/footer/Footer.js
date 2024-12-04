@@ -1,7 +1,9 @@
 import React from "react"
 import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from 'keen-slider/react'
-import FooterSlide from "./FooterSlide"
+import FooterSlide from "../FooterSlide"
+import QuickLinkSection from "./QuickLinkSection"
+import CopyrightSection from "./CopyrightSection"
 
 export default function Footer() {
     const animation = { duration: 25000, easing: (t) => t }
@@ -36,11 +38,8 @@ export default function Footer() {
                     <FooterSlide />
                     <FooterSlide />
                 </div>
-                <div className="copyright-section bg-theme-dark">
-                    <p className="text-center text-theme-light pt-4 pb-24 px-4 text-1xl font-semibold">
-                        Copyright 2024, All rights reserved @ SomeLockSmith
-                    </p>
-                </div>
+                <QuickLinkSection />
+                <CopyrightSection />
             </div>
         </footer>
     )

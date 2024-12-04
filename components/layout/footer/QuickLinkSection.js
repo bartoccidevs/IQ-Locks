@@ -1,0 +1,33 @@
+import CustomImage from "@/components/CustomImage"
+
+export default function QuickLinkSection() {
+    return (
+        <div className="quicklink-section px-4">
+            <div>
+                <h2 className="text-white text-2xl font-semibold py-2">
+                    Our Services
+                </h2>
+                <div className="space-y-1 text-theme-light text-1xl">
+                    <p>Residential Locksmith</p>
+                    <p>Commercial Locksmith</p>
+                    <p>Car & Auto Locksmith</p>
+                    <p>24/7 Emergency Locksmith</p>
+                    <p>Windows and Doors</p>
+                    <p>Security Systems</p>
+                </div>
+            </div>
+            <div>
+                <h2 className="text-white text-2xl font-semibold py-2">
+                    Find Us
+                </h2>
+                <div className="flex">
+                    <CustomImage src="/assets/icons/instagram.svg" className="h-8 w-8 mr-3 mb-4"/>
+                    <CustomImage src="/assets/icons/twitter.svg" className="h-8 w-8 mr-3 mb-4"/>
+                    <CustomImage src="/assets/icons/facebook.svg" className="h-8 w-8 mr-3 mb-4"/>
+                    <CustomImage src="/assets/icons/linkedin.svg" className="h-8 w-8 mr-3 mb-4"/>
+                    <CustomImage src="/assets/icons/youtube.svg" className="h-8 w-8 mr-3 mb-4"/>
+                </div>
+            </div>
+        </div>
+    )
+}
