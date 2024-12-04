@@ -51,11 +51,6 @@ body {
 .active-hamburger-side-bar, .hamburger-side-bar {
   z-index: 1;
 }
-.hovering-phone {
-  z-index: 0;
-  transition: all 0.5s ease-in-out;
-  border: 0.1rem solid var(--theme-light);
-}
 
 /* FOOTER START */
 .copyright-section {
@@ -64,6 +59,14 @@ body {
   border-right-style: none;
   border-left-style: none;
   border-bottom-style: none;
-  border-color: var(--theme-light);
+  border-color: white;
 }
 /* FOOTER END */
+
+/* HOVERABLES START */
+.hovering-phone {
+  z-index: 0;
+  transition: all 0.5s ease-in-out;
+  border: 0.1rem solid white;
+}
+/* HOVERABLES END */
