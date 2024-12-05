@@ -9,12 +9,12 @@ export default function ContactPage() {
         <h1 className="text-4xl md:text-6xl font-bold py-4 pt-20 px-4 md:px-16 md:pb-4 bg-theme-dark text-theme-light">Contact Us</h1>
         <div className="main-page bg-theme-highlight md:pt-6 px-4 md:px-16">
             <Head>
-                <title>Contact the Locksmith</title>
+                <title>The Locksmith | Contact Us</title>
                 <meta name="description" content="A brief description of the page content." />
                 <meta name="keywords" content="keyword1, keyword2, keyword3" />
-                <meta property="og:title" content="Locksmith Contact Page" />
+                <meta property="og:title" content="The Locksmith | Contact Us" />
                 <meta property="og:description" content="Contact the locksmith here!" />
-                <meta property="og:image" content="/assets/icons/logo.svg" />
+                <meta property="og:image" content="/assets/photos/lock-picking.jpg" />
             </Head>
             <div className="grid md:grid-cols-2 pt-4 pb-4 md:pb-10 md:space-x-10">
                 <div className="flex flex-col space-y-4 md:justify-between h-full">
