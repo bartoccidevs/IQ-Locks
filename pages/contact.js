@@ -18,7 +18,10 @@ export default function ContactPage() {
             </Head>
             <div className="grid md:grid-cols-2 pt-4 pb-4 md:pb-10 md:space-x-10">
                 <div className="flex flex-col space-y-4 md:justify-between h-full">
-                    <CustomImage src="/assets/photos/lock-picking.jpg" className="h-64 w-full object-cover rounded" alt="man picking lock"/>
+                    <CustomImage height={150} width={300}
+                    src="/assets/photos/lock-picking.jpg" 
+                    className="h-64 w-full object-cover rounded" 
+                    alt="man picking lock"/>
                     <h2 className="text-4xl md:text-5xl font-bold text-theme-dark">Need To Contact a Locksmith?</h2>
                     <p className="text-2xl">Looking for a local locksmith? Whether you need help with an emergency lockout, key replacement or lock installation, our professional locksmiths are committed to providing you with great results and making sure. We're here to help:</p>
                     <div className="flex flex-col space-y-4 py-8">

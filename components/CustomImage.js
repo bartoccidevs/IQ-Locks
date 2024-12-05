@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function CustomImage(props) {
     return (
         <div className="relative">
-            <Image {...props} height={10} width={10} loading="lazy"/>
+            <Image height={50} width={50} {...props} loading="lazy"/>
         </div>
     )
 }
