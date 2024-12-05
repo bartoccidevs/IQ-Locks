@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --theme-dark: rgb(6 95 70);
+  --theme-dark: #065f46;
   --theme-light: rgb(167 243 208);
   --theme-highlight: #ffffff;
+  --theme-action: #b71717;
 }
 
 /* BASE SETTING START */
@@ -22,7 +23,8 @@ body {
   z-index: 2;
 }
 .main-page {
-  min-height: 40vh;
+  min-height: calc(100vh - 5rem);
+  /* padding-top: 5rem; */
 }
 .hamburger-menu, ::before, ::after {
   height: 0.25rem;

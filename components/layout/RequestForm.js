@@ -1,4 +1,3 @@
-
 const formFields = [
     {fieldTitle: 'full name', fieldLabel: 'fullname', fieldType: 'name', fieldName:'name'},
     {fieldTitle: 'Phone number', fieldLabel: 'phonenumber', fieldType: 'number', fieldName:'phone'},
@@ -9,7 +8,7 @@ const formFields = [
 
 export default function RequestForm() {
     return( 
-        <form className="bg-theme-highlight py-8 px-4 md:px-16 space-y-3 flex flex-col">
+        <form className="bg-theme-highlight py-8 px-4 md:px-10 space-y-3 flex flex-col rounded h-full border-2 border-theme-dark">
             {formFields.map((field,i) => (
                 <FormField 
                 fieldTitle={field.fieldTitle}

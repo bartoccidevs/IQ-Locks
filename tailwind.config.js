@@ -11,6 +11,7 @@ module.exports = {
         'theme-dark': 'var(--theme-dark)',
         'theme-light': 'var(--theme-light)',
         'theme-highlight': 'var(--theme-highlight)',
+        'theme-action': 'var(--theme-action)',
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
