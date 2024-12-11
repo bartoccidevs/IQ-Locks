@@ -9,8 +9,8 @@ import siteData from "@/data/site-identity";
 export default function ContactPage() {
     return (
         <>
-        <h1 className="text-4xl md:text-6xl font-bold py-4 pt-24 px-4 md:px-16 md:pb-4 bg-theme-primary text-theme-text-contrast">Contact Us</h1>
-        <div className="main-page bg-theme-background md:pt-6 px-4 md:px-16">
+        <h1 className="text-4xl md:text-6xl font-bold py-4 pt-24 inline-padding md:pb-4 bg-theme-primary text-theme-text-contrast">Contact Us</h1>
+        <div className="main-page bg-theme-background md:pt-6 inline-padding">
             <Head>
                 <title>{siteData.name} | Contact Us</title>
                 <meta name="description" content="A brief description of the page content." />

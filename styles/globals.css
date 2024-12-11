@@ -53,14 +53,17 @@ p {
 body {
   background-color: var(--theme-primary);
 }
+.inline-padding {
+  padding-inline: 4rem;
+}
+.main-page {
+  min-height: calc(100vh - 5rem);
+  padding-top: 5.5rem;
+}
 /* BASE SETTING END */
 
 .navbar {
   z-index: 2;
-}
-.main-page {
-  min-height: calc(100vh - 5rem);
-  /* padding-top: 5rem; */
 }
 .hamburger-menu, ::before, ::after {
   height: 0.25rem;
@@ -116,3 +119,46 @@ footer .keen-slider {
   border: 0.1rem solid var(--theme-background);
 }
 /* HOVERABLES END */
+
+/* HOMEPAGE START */
+.homepage-hero {
+  background: url("/assets/photos/new-york-city-skyline.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right 35% bottom 25%;
+  animation: animatedBackground 15s linear infinite alternate;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: right 35% bottom 25%;
+  }
+  to {
+    background-position: right 55% bottom 45%;
+  }
+}
+.homepage-hero-blur {
+  background-color: #03091193;
+}
+/* HOMEPAGE END */
+
+/* RESPONSIVE SIZES */
+/* sm */
+@media (max-width: 640px) {
+
+}
+
+/* md */
+@media (max-width: 768px) {
+  .inline-padding {
+    padding-inline: 1rem;
+  }
+  .homepage-hero {
+    animation: animatedBackground 5s linear infinite alternate;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+
+}

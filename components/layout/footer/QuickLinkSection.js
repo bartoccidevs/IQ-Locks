@@ -3,7 +3,7 @@ import CustomSvg from "@/components/CustomSvg"
 
 export default function QuickLinkSection() {
     return (
-        <div className="quicklink-section px-4 md:px-16 space-y-4 md:flex md:flex-row md:space-x-32 md:py-10">
+        <div className="quicklink-section inline-padding space-y-4 md:flex md:flex-row md:space-x-32 md:py-10">
             <div className="pt-4">
                 <h2 className="text-theme-text-contrast text-2xl font-semibold py-2">
                     Our Services
