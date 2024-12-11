@@ -33,7 +33,7 @@ const FormField = ({ fieldTitle, fieldType, fieldName, fieldLabel }) => {
                 type={fieldType} 
                 name={fieldName} 
                 id={fieldLabel}
-                className="bg-theme-form rounded w-full p-2 h-32 text-1xl text-theme-primary shadow-inner focus:ring-1 focus:ring-theme-primary resize-y"></textarea>
+                className="bg-theme-text-contrast rounded w-full p-2 h-32 text-1xl text-theme-primary shadow-inner focus:ring-1 focus:ring-theme-primary resize-y"></textarea>
             </div>
         )
         
@@ -46,7 +46,7 @@ const FormField = ({ fieldTitle, fieldType, fieldName, fieldLabel }) => {
                 name={fieldName} 
                 autoComplete="true" 
                 id={fieldLabel}
-                className="bg-theme-form rounded w-full p-2 text-1xl text-theme-primary shadow-inner focus:ring-1 focus:ring-theme-primary !overflow-x-scroll"></input>
+                className="bg-theme-text-contrast rounded w-full p-2 text-1xl text-theme-primary shadow-inner focus:ring-1 focus:ring-theme-primary !overflow-x-scroll"></input>
             </div>
         )
     }
