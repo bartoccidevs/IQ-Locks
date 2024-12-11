@@ -11,7 +11,7 @@ export default function Home(props) {
         <meta name="keywords" content="keyword1, keyword2, keyword3" />
         <meta property="og:title" content={`${siteData.name} | Home`} />
         <meta property="og:description" content="Description Here" />
-        <meta property="og:image" content="/assets/photos/lock-picking.jpg" />
+        <meta property="og:image" content="/assets/icons/IQLocks-original.jpeg" />
       </Head>
       <HomepageHero data={siteData}/>
     </div>

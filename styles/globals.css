@@ -172,7 +172,7 @@ footer .keen-slider {
       object-position: right 0% bottom 0%;
     }
     to {
-      object-position: left 0% top 20%;
+      object-position: right 100% bottom 50%;
     }
   }
 }
