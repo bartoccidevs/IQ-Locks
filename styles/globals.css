@@ -70,6 +70,7 @@ body {
   background-color: #e7a668;
 }
 /* REUSABLE END */
+
 .navbar {
   z-index: 2;
 }
@@ -162,7 +163,16 @@ footer .keen-slider {
     padding-inline: 1rem;
   }
   .homepage-hero {
+    background-position: right 0% bottom 0%;
     animation: animatedBackground 5s linear infinite alternate;
+  }
+  @keyframes animatedBackground {
+    from {
+      background-position: right 0% bottom 0%;
+    }
+    to {
+      background-position: left 0% top 20%;
+    }
   }
 }
 
