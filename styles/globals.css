@@ -3,19 +3,52 @@
 @tailwind utilities;
 
 :root {
-  --theme-dark: #065f46;
-  --theme-light: rgb(167 243 208);
-  --theme-highlight: #ffffff;
-  --theme-action: #b71717;
+  --theme-text: #061122;
+  --theme-text-contrast: #dce8f9;
+  --theme-background: #eff4fc;
+  --theme-background-dark: #030911;
+  --theme-primary: #20252C;
+  --theme-primary-dark: #d3d8df;
+  --theme-secondary: #E18D3D;
+  --theme-secondary-dark: #c26d1e;
+  --theme-accent: #879cb8;
+  --theme-accent-dark: #465b77;
+  --theme-form: #879cb8;
 }
+
+/* Color of SVG's */
+.svg {
+  filter: invert(86%) sepia(12%) saturate(341%) hue-rotate(183deg) brightness(105%) contrast(95%);
+}
+
+/* FONTS START */
+@font-face {
+  font-family: 'NotoSansThai';
+  src: url('/fonts/NotoSansThai.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Labrada";
+  src: url('/fonts/Labrada-VariableFont_wght.ttf') format('truetype');
+}
+h1, h2, h3, h4 {
+  font-family: NotoSansThai;
+}
+label {
+  font-family: NotoSansThai;
+}
+p {
+  font-family: Labrada;
+}
+/* FONTS END */
 
 /* BASE SETTING START */
 * {
   padding: 0px;
   margin: 0px;
+  font-family: NotoSansThai;
 }
 body {
-  background-color: var(--theme-dark);
+  background-color: var(--theme-primary);
 }
 /* BASE SETTING END */
 
@@ -62,7 +95,7 @@ body {
   border-right-style: none;
   border-left-style: none;
   border-bottom-style: none;
-  border-color: var(--theme-highlight);
+  border-color: var(--theme-secondary);
 }
 footer .keen-slider {
   border-top-style: solid;
@@ -70,13 +103,13 @@ footer .keen-slider {
   border-left-style: none;
   border-bottom-style: none;
   border-width: 0.1rem;
-  border-color: var(--theme-dark);
+  border-color: var(--theme-primary);
 }
 /* FOOTER END */
 
 /* HOVERABLES START */
 .hovering-phone, .hovering-email{
   transition: all 0.5s ease-in-out;
-  border: 0.1rem solid var(--theme-highlight);
+  border: 0.1rem solid var(--theme-background);
 }
 /* HOVERABLES END */

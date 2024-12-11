@@ -29,7 +29,7 @@ export default function Carousel({ children }) {
       )
       
     return (
-        <div ref={sliderRef} className="keen-slider py-4 bg-theme-light">
+        <div ref={sliderRef} className="keen-slider py-4 bg-theme-secondary">
           {children}
         </div>
     )

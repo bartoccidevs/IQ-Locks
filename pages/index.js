@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function Home(props) {
   return (
-    <div className="main-page bg-blue-300">
+    <div className="main-page bg-theme-background">
       <Head>
         <title>Welcome to this Locksmith | Home</title>
         <meta name="description" content="A brief description of the page content." />

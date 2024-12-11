@@ -8,7 +8,7 @@ const formFields = [
 
 export default function RequestForm() {
     return( 
-        <form className="bg-theme-highlight py-8 px-4 md:px-10 space-y-3 flex flex-col rounded h-full border-2 border-theme-dark">
+        <form className="bg-theme-background py-8 px-4 md:px-10 space-y-3 flex flex-col rounded h-full border-2 border-theme-primary">
             {formFields.map((field,i) => (
                 <FormField 
                 fieldTitle={field.fieldTitle}
@@ -18,7 +18,7 @@ export default function RequestForm() {
                 key={i}/>
                 
             ))}
-            <input type="submit" className="ml-auto capitalize bg-theme-dark text-theme-highlight text-2xl font-bold p-3 rounded drop-shadow-2xl" value="Submit"/>
+            <input type="submit" className="ml-auto capitalize bg-theme-primary text-theme-background text-2xl font-bold p-3 rounded drop-shadow-2xl" value="Submit"/>
         </form>
     )
 }
@@ -28,25 +28,25 @@ const FormField = ({ fieldTitle, fieldType, fieldName, fieldLabel }) => {
     if (fieldType == "text") {
         return (
             <div className="space-y-1 w-full">
-                <label htmlFor={fieldLabel} className="text-theme-dark text-2xl font-semibold capitalize">{fieldTitle}</label>
+                <label htmlFor={fieldLabel} className="text-theme-primary text-2xl font-semibold capitalize">{fieldTitle}</label>
                 <textarea 
                 type={fieldType} 
                 name={fieldName} 
                 id={fieldLabel}
-                className="bg-theme-light rounded w-full p-2 h-32 text-1xl text-theme-dark shadow-inner focus:ring-1 focus:ring-theme-dark resize-y"></textarea>
+                className="bg-theme-form rounded w-full p-2 h-32 text-1xl text-theme-primary shadow-inner focus:ring-1 focus:ring-theme-primary resize-y"></textarea>
             </div>
         )
         
     } else {
         return (
             <div className="space-y-1 w-full">
-                <label htmlFor={fieldLabel} className="text-theme-dark text-2xl font-semibold capitalize">{fieldTitle}</label>
+                <label htmlFor={fieldLabel} className="text-theme-primary text-2xl font-semibold capitalize">{fieldTitle}</label>
                 <input 
                 type={fieldType} 
                 name={fieldName} 
                 autoComplete="true" 
                 id={fieldLabel}
-                className="bg-theme-light rounded w-full p-2 text-1xl text-theme-dark shadow-inner focus:ring-1 focus:ring-theme-dark !overflow-x-scroll"></input>
+                className="bg-theme-form rounded w-full p-2 text-1xl text-theme-primary shadow-inner focus:ring-1 focus:ring-theme-primary !overflow-x-scroll"></input>
             </div>
         )
     }

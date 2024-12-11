@@ -8,12 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'theme-dark': 'var(--theme-dark)',
-        'theme-light': 'var(--theme-light)',
-        'theme-highlight': 'var(--theme-highlight)',
-        'theme-action': 'var(--theme-action)',
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'theme-text': 'var(--theme-text)',
+        'theme-text-contrast': 'var(--theme-text-contrast)',
+        'theme-background': 'var(--theme-background)',
+        'theme-primary': 'var(--theme-primary)',
+        'theme-secondary': 'var(--theme-secondary)',
+        'theme-accent': 'var(--theme-accent)',
+        'theme-form': 'var(--theme-form)',
       },
     },
   },

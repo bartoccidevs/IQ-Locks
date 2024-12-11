@@ -11,7 +11,7 @@ export default function EmergencyLockoutCarousel() {
         <Carousel>
             {slides.map((slide,i) => (
                 <CarouselSlide key={i}>
-                    <p className="uppercase text-1xl text-center text-theme-dark font-bold">
+                    <p className="uppercase text-1xl text-center text-theme-primary font-bold">
                         {slide}
                     </p>
                 </CarouselSlide>

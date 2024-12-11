@@ -16,25 +16,25 @@ export default function Header() {
     
     return (
         <header>
-            <div className="navbar fixed w-full bg-theme-dark">
+            <div className="navbar fixed w-full bg-theme-primary">
                 <div className="nav-container py-4 px-4 md:px-16 flex justify-between items-center">
                     <a href="/">
-                        <CustomImage src="/assets/icons/logo.svg" className="h-12 w-12 cursor-pointer" alt="logo"/>
+                        <CustomImage src="/assets/icons/logo.svg" className="h-14 w-20 cursor-pointer" alt="logo"/>
                     </a>
                     <div onClick={handleHamburgerClick} className="cursor-pointer">
                         <div className="
-                        hamburger-menu bg-theme-light
-                        before:-translate-y-3 before:bg-theme-light
-                        after:translate-y-3 after:bg-theme-light" 
+                        hamburger-menu bg-theme-text-contrast
+                        before:-translate-y-3 before:bg-theme-text-contrast
+                        after:translate-y-3 after:bg-theme-text-contrast" 
                         />
                     </div>
                 </div>
             </div>
-            <div className={isOpenHamburger ? 'active-hamburger-side-bar translate-y-20 bg-theme-dark':'hamburger-side-bar'}>
-                <ul className="list-none mx-4 pt-10">
+            <div className={isOpenHamburger ? 'active-hamburger-side-bar translate-y-20 bg-theme-primary':'hamburger-side-bar'}>
+                <ul className="list-none mx-4 md:mx-16 pt-10">
                     {navlinks.flatMap((link, i) => (
                         <li key={i} className="py-2">
-                            <a className="text-theme-light text-3xl font-bold"
+                            <a className="text-theme-text-contrast text-3xl font-bold"
                             href={link.link}>{link.lable}</a>
                         </li>
                     ))}
