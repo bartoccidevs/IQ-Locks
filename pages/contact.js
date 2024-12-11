@@ -3,10 +3,13 @@ import RequestForm from "@/components/layout/RequestForm";
 import CustomImage from "@/components/CustomImage";
 import CustomSvg from "@/components/CustomSvg";
 import Link from "next/link";
+import useWindowDimensions from "@/components/useWindowDimensions";
 
 import siteData from "@/data/site-identity";
 
 export default function ContactPage() {
+    const { width } = useWindowDimensions();
+
     return (
         <>
         <h1 className="text-4xl md:text-6xl font-bold py-4 pt-24 inline-padding md:pb-4 bg-theme-primary text-theme-text-contrast">Contact Us</h1>
@@ -21,10 +24,11 @@ export default function ContactPage() {
             </Head>
             <div className="grid md:grid-cols-2 pt-4 pb-4 md:pb-10 md:space-x-10">
                 <div className="flex flex-col space-y-4 md:justify-between h-full">
-                    <CustomImage height={150} width={300}
+                    <CustomImage height={0} width={width/2}
                     src="/assets/photos/lock-picking.jpg" 
                     className="h-64 w-full object-cover rounded" 
-                    alt="man picking lock"/>
+                    alt="man picking lock"
+                    priority/>
                     <h2 className="text-4xl md:text-5xl font-bold text-theme-primary">Need To Contact a Locksmith?</h2>
                     <p className="text-2xl">Looking for a local locksmith? Whether you need help with an emergency lockout, key replacement or lock installation, our professional locksmiths are committed to providing you with great results and making sure. We're here to help:</p>
                     <div className="flex flex-col space-y-4 py-8">

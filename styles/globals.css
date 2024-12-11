@@ -165,7 +165,7 @@ footer .keen-slider {
     zoom: 140%;
     height: 17.5rem;
     object-position: right 0% bottom 0%;
-    animation: animatedBackground 5s linear infinite alternate;
+    animation: animatedBackground 8s linear infinite alternate;
   }
   @keyframes animatedBackground {
     from {
