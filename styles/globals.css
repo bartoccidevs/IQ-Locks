@@ -130,20 +130,19 @@ footer .keen-slider {
 /* HOVERABLES END */
 
 /* HOMEPAGE START */
-.homepage-hero {
-  background: url("/assets/photos/new-york-city-skyline.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right 35% bottom 25%;
+.hero-image {
+  height: 27rem;
+  object-fit: cover;
+  object-position: right 35% bottom 25%;
   animation: animatedBackground 15s linear infinite alternate;
 }
 
 @keyframes animatedBackground {
   from {
-    background-position: right 35% bottom 25%;
+    object-position: right 35% bottom 25%;
   }
   to {
-    background-position: right 55% bottom 45%;
+    object-position: right 55% bottom 45%;
   }
 }
 .homepage-hero-blur {
@@ -162,16 +161,18 @@ footer .keen-slider {
   .inline-padding {
     padding-inline: 1rem;
   }
-  .homepage-hero {
-    background-position: right 0% bottom 0%;
+  .hero-image {
+    zoom: 140%;
+    height: 17.5rem;
+    object-position: right 0% bottom 0%;
     animation: animatedBackground 5s linear infinite alternate;
   }
   @keyframes animatedBackground {
     from {
-      background-position: right 0% bottom 0%;
+      object-position: right 0% bottom 0%;
     }
     to {
-      background-position: left 0% top 20%;
+      object-position: left 0% top 20%;
     }
   }
 }
