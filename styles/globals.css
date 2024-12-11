@@ -33,10 +33,7 @@
   font-family: "Labrada";
   src: url('/fonts/Labrada-VariableFont_wght.ttf') format('truetype');
 }
-h1, h2, h3, h4 {
-  font-family: NotoSansThai;
-}
-label {
+h1, h2, h3, h4, h5, h6 {
   font-family: NotoSansThai;
 }
 p {
@@ -62,6 +59,17 @@ body {
 }
 /* BASE SETTING END */
 
+
+/* REUSABLE START */
+.cta-button {
+  box-shadow: inset 10px 5px 5px var(--theme-secondary-dark);
+  transition: all 0.3s ease-in-out;
+}
+.cta-button:hover {
+  box-shadow: inset 10px 5px 5px #E18D3D;
+  background-color: #e7a668;
+}
+/* REUSABLE END */
 .navbar {
   z-index: 2;
 }
