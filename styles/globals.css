@@ -46,6 +46,7 @@ p {
   padding: 0px;
   margin: 0px;
   font-family: NotoSansThai;
+  line-height: 1rem !important;
 }
 body {
   background-color: var(--theme-primary);
@@ -165,7 +166,7 @@ footer .keen-slider {
     zoom: 140%;
     height: 17.5rem;
     object-position: right 0% bottom 0%;
-    animation: animatedBackground 8s linear infinite alternate;
+    animation: animatedBackground 4s linear infinite alternate;
   }
   @keyframes animatedBackground {
     from {

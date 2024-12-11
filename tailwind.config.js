@@ -16,6 +16,9 @@ module.exports = {
         'theme-accent': 'var(--theme-accent)',
         'theme-form': 'var(--theme-form)',
       },
+      fontSize: {
+        '3.5xl': '2rem'
+      }
     },
   },
   plugins: [],
