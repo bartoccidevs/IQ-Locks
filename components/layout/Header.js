@@ -19,7 +19,7 @@ export default function Header() {
             <div className="navbar fixed w-full bg-theme-primary">
                 <div className="nav-container py-4 inline-padding flex justify-between items-center">
                     <a href="/">
-                        <CustomImage src="/assets/icons/logo.svg" className="h-14 w-20 cursor-pointer" alt="logo"/>
+                        <CustomImage src="/assets/icons/logo.svg" className="h-14 w-20 cursor-pointer" alt="IQ Locks logo" priority/>
                     </a>
                     <div onClick={handleHamburgerClick} className="cursor-pointer">
                         <div className="

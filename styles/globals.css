@@ -46,7 +46,7 @@ p {
   padding: 0px;
   margin: 0px;
   font-family: NotoSansThai;
-  line-height: 1rem !important;
+  line-height: 102% !important;
 }
 body {
   background-color: var(--theme-primary);
