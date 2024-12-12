@@ -134,16 +134,16 @@ footer .keen-slider {
 .hero-image {
   height: 27rem;
   object-fit: cover;
-  object-position: right 35% bottom 25%;
-  /* animation: animatedBackground 15s linear infinite alternate; */
+  object-position: right 50% bottom 0%;
+  animation: animatedBackground 15s linear infinite alternate;
 }
 
 @keyframes animatedBackground {
   from {
-    object-position: right 35% bottom 25%;
+    object-position: right 50% bottom 100%;
   }
   to {
-    object-position: right 55% bottom 45%;
+    object-position: right 50% bottom 0%;
   }
 }
 .homepage-hero-blur {
@@ -170,10 +170,10 @@ footer .keen-slider {
   }
   @keyframes animatedBackground {
     from {
-      object-position: right 0% bottom 0%;
+      object-position: right 0% bottom 100%;
     }
     to {
-      object-position: right 0% bottom 100%;
+      object-position: right 0% bottom 0%;
     }
   }
 }

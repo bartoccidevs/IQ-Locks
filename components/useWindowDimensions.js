@@ -11,8 +11,8 @@ function useWindowDimensions() {
     function handleResize() {
       if (window.innerWidth < 640) {
         newWidth = 300
-      } else if (window.innerWidth > 800) {
-        newWidth = 800
+      } else if (window.innerWidth > 1000) {
+        newWidth = 1000
       } else {
         newWidth = window.innerWidth
       }

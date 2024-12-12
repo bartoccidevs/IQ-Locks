@@ -12,7 +12,7 @@ export default function HomepageHero({ data }) {
                     <CustomImage 
                     width={width}
                     height={0}
-                    src="/assets/photos/new-york-city-skyline.jpg" 
+                    src="/assets/photos/new-york-city-skyline-tall.jpeg" 
                     className="w-full absolute hero-image"
                     alt="New york city skyline"
                     priority/>
