@@ -135,7 +135,7 @@ footer .keen-slider {
   height: 27rem;
   object-fit: cover;
   object-position: right 35% bottom 25%;
-  animation: animatedBackground 15s linear infinite alternate;
+  /* animation: animatedBackground 15s linear infinite alternate; */
 }
 
 @keyframes animatedBackground {
@@ -163,7 +163,7 @@ footer .keen-slider {
     padding-inline: 1rem;
   }
   .hero-image {
-    zoom: 140%;
+    /* zoom: 140%; */
     height: 17.5rem;
     object-position: right 0% bottom 0%;
     animation: animatedBackground 4s linear infinite alternate;
@@ -173,7 +173,7 @@ footer .keen-slider {
       object-position: right 0% bottom 0%;
     }
     to {
-      object-position: right 100% bottom 50%;
+      object-position: right 0% bottom 100%;
     }
   }
 }
