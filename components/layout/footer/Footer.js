@@ -6,7 +6,7 @@ import CopyrightSection from "./CopyrightSection"
 export default function Footer() {
     return (
         <footer>
-            <div className="bg-theme-primary">
+            <div className="bg-theme-background dark:bg-theme-background-dark">
               <EmergencyLockoutCarousel />
               <QuickLinkSection />
               <CopyrightSection />

@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --theme-text: #061122;
+  /* ORIGINAL */
+  /* --theme-text: #061122;
   --theme-text-contrast: #dce8f9;
   --theme-background: #eff4fc;
   --theme-background-dark: #030911;
@@ -13,7 +14,23 @@
   --theme-secondary-dark: #c26d1e;
   --theme-accent: #879cb8;
   --theme-accent-dark: #465b77;
+  --theme-form: #879cb8; */
+
+/* REVAMP */
+  --theme-text: #150c04;
+  --theme-text-dark: #fbf2ea;
+  /* --theme-text-contrast: #dce8f9; */
+  --theme-background: #fdf8f2;
+  --theme-background-dark: #162336;
+  --theme-primary: #e18c3d;
+  --theme-primary-dark: #c26d1e;
+  --theme-secondary: #7f8894;
+  --theme-secondary-dark: #6b7480;
+  --theme-accent: #65c4e2;
+  --theme-accent-dark: #1d7d9a;
   --theme-form: #879cb8;
+  --theme-form-dark: ;
+
 }
 
 /* Color of SVG's */
@@ -63,7 +80,7 @@ body {
 
 /* REUSABLE START */
 .cta-button {
-  box-shadow: inset 10px 5px 5px var(--theme-secondary-dark);
+  box-shadow: inset 10px 5px 5px var(--theme-primary-dark);
   transition: all 0.3s ease-in-out;
 }
 .cta-button:hover {

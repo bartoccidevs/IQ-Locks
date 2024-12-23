@@ -1,5 +1,6 @@
 import CustomImage from "../CustomImage";
 import { useState } from "react"
+import ThemeSwitch from "../ThemeSwitch";
 
 const navlinks = [
     { lable: 'Home', link: "/" },
@@ -16,16 +17,19 @@ export default function Header() {
     
     return (
         <header>
-            <div className="navbar fixed w-full bg-theme-primary">
+            <div className="
+            bg-theme-background dark:bg-theme-background-dark
+            navbar fixed w-full">
                 <div className="nav-container py-4 inline-padding flex justify-between items-center">
                     <a href="/">
                         <CustomImage src="/assets/icons/logo.svg" className="h-14 w-20 cursor-pointer" alt="IQ Locks logo" priority/>
                     </a>
+                    <ThemeSwitch />
                     <div onClick={handleHamburgerClick} className="cursor-pointer">
                         <div className="
-                        hamburger-menu bg-theme-text-contrast
-                        before:-translate-y-3 before:bg-theme-text-contrast
-                        after:translate-y-3 after:bg-theme-text-contrast" 
+                        hamburger-menu bg-theme-text dark:bg-theme-text-dark
+                        before:-translate-y-3 before:bg-theme-text before:dark:bg-theme-text-dark
+                        after:translate-y-3 after:bg-theme-text after:dark:bg-theme-text-dark" 
                         />
                     </div>
                 </div>
