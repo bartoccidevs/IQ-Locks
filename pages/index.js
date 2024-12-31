@@ -7,7 +7,7 @@ export default function Home(props) {
     <div className="main-page bg-theme-background">
       <Head>
         <title>Welcome to {siteData.name} | Home</title>
-        <meta name="description" content="A brief description of the page content." />
+        <meta name="description" content="A brief description of the page content. " />
         <meta name="keywords" content="keyword1, keyword2, keyword3" />
         <meta property="og:title" content={`${siteData.name} | Home`} />
         <meta property="og:description" content="Description Here" />
