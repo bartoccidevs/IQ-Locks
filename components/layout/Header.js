@@ -1,4 +1,6 @@
+import Link from "next/link";
 import CustomImage from "../CustomImage";
+import GTMEvent from "../GTMEvent";
 import { useState } from "react"
 import ThemeSwitch from "../ThemeSwitch";
 
@@ -21,7 +23,7 @@ export default function Header() {
             bg-theme-background dark:bg-theme-background-dark
             navbar fixed w-full">
                 <div className="nav-container py-4 inline-padding flex justify-between items-center">
-                    <a href="/">
+                    <a href="/" onClick={() => GTMEvent({eventName: "Link Click", eventVal: "home logo"})}>
                         <CustomImage src="/assets/icons/logo.svg" className="h-14 w-20 cursor-pointer" alt="IQ Locks logo" priority/>
                     </a>
                     <ThemeSwitch />
@@ -39,7 +41,9 @@ export default function Header() {
                     {navlinks.flatMap((link, i) => (
                         <li key={i} className="py-2">
                             <a className="text-theme-text-contrast text-3xl font-bold"
-                            href={link.link}>{link.lable}</a>
+                            href={link.link}
+                            onClick={() => GTMEvent({eventName: "Link Click", eventVal: `${link.lable} page link`})}
+                            >{link.lable}</a>
                         </li>
                     ))}
                 </ul>
