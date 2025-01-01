@@ -15,7 +15,7 @@ export default function Document() {
         as="font"
         crossOrigin=""/>
       </Head>
-      <body className="antialiased">
+      <body className="antialiased bg-theme-background dark:bg-theme-background-dark">
         <Main />
         <NextScript />
       </body>

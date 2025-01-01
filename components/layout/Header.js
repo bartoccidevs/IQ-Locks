@@ -21,6 +21,7 @@ export default function Header() {
         <header>
             <div className="
             bg-theme-background dark:bg-theme-background-dark
+            border-theme-divider dark:border-theme-divider-dark
             navbar fixed w-full">
                 <div className="nav-container py-4 inline-padding flex justify-between items-center">
                     <a href="/" onClick={() => GTMEvent({eventName: "Link Click", eventVal: "home logo"})}>

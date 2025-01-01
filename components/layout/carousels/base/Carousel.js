@@ -2,7 +2,7 @@ import React from "react"
 import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from 'keen-slider/react'
 
-export default function Carousel({ children }) {
+export default function Carousel({ sliderClass, children }) {
     const animation = { duration: 25000, easing: (t) => t }
     
     const [sliderRef, instanceRef] = useKeenSlider(
@@ -29,7 +29,7 @@ export default function Carousel({ children }) {
       )
       
     return (
-        <div ref={sliderRef} className="keen-slider py-4 bg-theme-secondary">
+        <div ref={sliderRef} className={`keen-slider ${sliderClass}`}>
           {children}
         </div>
     )

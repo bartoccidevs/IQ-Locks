@@ -45,11 +45,19 @@ export default function QuickLinkSection() {
                     Find Us
                 </h2>
                 <div className="flex">
-                    <CustomSvg src="/assets/icons/instagram.svg" className="h-8 w-8 mr-3 mb-4" alt="instagram logo link"/>
-                    <CustomSvg src="/assets/icons/twitter.svg" className="h-8 w-8 mr-3 mb-4" alt="twitter logo link"/>
-                    <CustomSvg src="/assets/icons/facebook.svg" className="h-8 w-8 mr-3 mb-4" alt="facebook logo link"/>
-                    <CustomSvg src="/assets/icons/linkedin.svg" className="h-8 w-8 mr-3 mb-4" alt="linked in logo link"/>
-                    <CustomSvg src="/assets/icons/youtube.svg" className="h-8 w-8 mr-3 mb-4" alt="youtube logo link"/>
+                    <CustomSvg src="/assets/icons/instagram.svg" className="social-quicklink 
+                    content-insta 
+                    hover:content-insta-orange
+                    dark:content-insta-dark
+                    dark:hover:content-insta-orange" alt="instagram logo link"/>
+                    <CustomSvg src="/assets/icons/twitter.svg" className="social-quicklink
+                    content-twitter 
+                    hover:content-twitter-orange
+                    dark:content-twitter-dark
+                    dark:hover:content-twitter-orange" alt="twitter logo link"/>
+                    <CustomSvg src="/assets/icons/facebook.svg" className="social-quicklink" alt="facebook logo link"/>
+                    <CustomSvg src="/assets/icons/linkedin.svg" className="social-quicklink" alt="linked in logo link"/>
+                    <CustomSvg src="/assets/icons/youtube.svg" className="social-quicklink" alt="youtube logo link"/>
                 </div>
             </div>
         </div>

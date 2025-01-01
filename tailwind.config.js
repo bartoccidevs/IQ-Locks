@@ -13,6 +13,8 @@ module.exports = {
         'theme-text-contrast': 'var(--theme-text-contrast)',
         'theme-background': 'var(--theme-background)',
         'theme-background-dark': 'var(--theme-background-dark)',
+        'theme-page': 'var(--theme-page)',
+        'theme-page-dark': 'var(--theme-page-dark)',
         'theme-primary': 'var(--theme-primary)',
         'theme-primary-dark': 'var(--theme-primary-dark)',
         'theme-secondary': 'var(--theme-secondary)',
@@ -21,9 +23,19 @@ module.exports = {
         'theme-accent-dark': 'var(--theme-accent-dark)',
         'theme-form': 'var(--theme-form)',
         'theme-form-dark': 'var(--theme-form-dark)',
+        'theme-divider': 'var(--theme-divider)',
+        'theme-divider-dark': 'var(--theme-divider-dark)'
       },
       fontSize: {
         '3.5xl': '2rem'
+      },
+      content: {
+        'insta': 'url("/assets/icons/instagram.svg")',
+        'insta-orange': 'url("/assets/icons/instagram-orange.svg")',
+        'insta-dark': 'url("/assets/icons/instagram-dark.svg")',
+        'twitter': 'url("/assets/icons/twitter.svg")',
+        'twitter-orange': 'url("/assets/icons/twitter-orange.svg")',
+        'twitter-dark': 'url("/assets/icons/twitter-dark.svg")',
       }
     },
   },

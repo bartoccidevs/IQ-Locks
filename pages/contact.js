@@ -35,9 +35,9 @@ export default function ContactPage() {
                         <Link href={`tel:${siteData.phone}`} aria-label="Click to call the locksmith" className="max-w-fit">
                             <div className="flex space-x-4 items-center max-w-fit"> 
                                 <div className="h-10 w-10">
-                                    <CustomSvg src="/assets/icons/phone.svg" className="h-full w-full svg-secondary" alt="phone icon"/>
+                                    <CustomSvg src="/assets/icons/phone.svg" className="h-full w-full svg-orange" alt="phone icon"/>
                                 </div>
-                                <p className="text-2xl font-semibold text-theme-primary hover:underline">
+                                <p className="text-2xl font-semibold text-black hover:underline">
                                 {siteData.phone}
                                 </p>
                             </div>
@@ -45,9 +45,9 @@ export default function ContactPage() {
                         <Link href={`mailto: ${siteData.email}`} aria-label="Click to open an email to the locksmith" className="max-w-fit">
                             <div className="flex space-x-4 items-center max-w-fit"> 
                                 <div className="h-10 w-10">
-                                    <CustomSvg src="/assets/icons/email.svg" className="h-full w-full svg-secondary" alt="email icon"/>
+                                    <CustomSvg src="/assets/icons/email.svg" className="h-full w-full svg-orange" alt="email icon"/>
                                 </div>
-                                <p className="text-2xl font-semibold text-theme-primary hover:underline">
+                                <p className="text-2xl font-semibold text-black hover:underline">
                                     {siteData.email}
                                 </p>
                             </div>

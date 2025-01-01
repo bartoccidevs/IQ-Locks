@@ -18,7 +18,7 @@ export default function RequestForm() {
                 key={i}/>
                 
             ))}
-            <input type="submit" className="ml-auto capitalize bg-theme-primary text-theme-background text-2xl font-bold p-3 rounded drop-shadow-2xl" value="Submit"/>
+            <input type="submit" className="ml-auto capitalize text-2xl font-bold p-3 drop-shadow-2xl cta-button-orange" value="Submit"/>
         </form>
     )
 }

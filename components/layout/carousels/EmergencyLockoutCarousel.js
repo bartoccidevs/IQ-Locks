@@ -8,10 +8,12 @@ const slides = [
 
 export default function EmergencyLockoutCarousel() {
     return (
-        <Carousel>
+        <Carousel sliderClass="py-4 
+        bg-theme-primary        
+        border-theme-divider dark:border-theme-divider-dark">
             {slides.map((slide,i) => (
                 <CarouselSlide key={i}>
-                    <p className="uppercase text-1xl text-center text-theme-primary font-bold">
+                    <p className="uppercase text-1xl text-center text-theme-text font-bold">
                         {slide}
                     </p>
                 </CarouselSlide>

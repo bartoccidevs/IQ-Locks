@@ -19,9 +19,10 @@
 /* REVAMP */
   --theme-text: #150c04;
   --theme-text-dark: #fbf2ea;
-  /* --theme-text-contrast: #dce8f9; */
   --theme-background: #fdf8f2;
-  --theme-background-dark: #162336;
+  --theme-background-dark: #20252C;
+  --theme-page: #ffffff;
+  --theme-page-dark: #2a313c;
   --theme-primary: #e18c3d;
   --theme-primary-dark: #c26d1e;
   --theme-secondary: #7f8894;
@@ -29,16 +30,14 @@
   --theme-accent: #65c4e2;
   --theme-accent-dark: #1d7d9a;
   --theme-form: #879cb8;
-  --theme-form-dark: ;
-
+  --theme-form-dark: #879cb8;
+  --theme-divider: rgb(72, 75, 80);
+  --theme-divider-dark: #20252C;
 }
 
 /* Color of SVG's */
-.svg {
-  filter: invert(86%) sepia(12%) saturate(341%) hue-rotate(183deg) brightness(105%) contrast(95%);
-}
-.svg-secondary {
-  filter: invert(71%) sepia(31%) saturate(1262%) hue-rotate(331deg) brightness(92%) contrast(90%);
+.svg-orange {
+  filter: invert(.76) sepia(.14) saturate(38.96) hue-rotate(329deg) brightness(.91) contrast(.93);
 }
 
 /* FONTS START */
@@ -79,17 +78,27 @@ body {
 
 
 /* REUSABLE START */
-.cta-button {
+.cta-button-orange {
   box-shadow: inset 10px 5px 5px var(--theme-primary-dark);
+  background-color: var(--theme-primary);
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  color: white;
+  border-radius: 0.5rem;
 }
-.cta-button:hover {
+.cta-button-orange:hover {
   box-shadow: inset 10px 5px 5px #E18D3D;
+  transform: scale(103%) rotate(-2deg);
   background-color: #e7a668;
 }
 /* REUSABLE END */
 
 .navbar {
+  border-width: 0.125rem;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-bottom-style: solid;
   z-index: 2;
 }
 .hamburger-menu, ::before, ::after {
@@ -128,15 +137,24 @@ body {
   border-right-style: none;
   border-left-style: none;
   border-bottom-style: none;
-  border-color: var(--theme-secondary);
 }
 footer .keen-slider {
   border-top-style: solid;
   border-right-style: none;
   border-left-style: none;
-  border-bottom-style: none;
+  border-bottom-style: solid;
   border-width: 0.1rem;
-  border-color: var(--theme-primary);
+}
+.social-quicklink {
+  height: 2rem;
+  width: 2rem;
+  margin-bottom: 1rem;
+  margin-right: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.social-quicklink:hover {
+  transform: scale(115%) rotate(4deg);
 }
 /* FOOTER END */
 
