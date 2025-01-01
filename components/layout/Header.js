@@ -26,7 +26,6 @@ export default function Header() {
                     <a href="/" onClick={() => GTMEvent({eventName: "Link Click", eventVal: "home logo"})}>
                         <CustomImage src="/assets/icons/logo.svg" className="h-14 w-20 cursor-pointer" alt="IQ Locks logo" priority/>
                     </a>
-                    <ThemeSwitch />
                     <div onClick={handleHamburgerClick} className="cursor-pointer">
                         <div className="
                         hamburger-menu bg-theme-text dark:bg-theme-text-dark
@@ -47,6 +46,7 @@ export default function Header() {
                         </li>
                     ))}
                 </ul>
+                <ThemeSwitch />
             </div>
         </header>
     )
