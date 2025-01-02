@@ -23,7 +23,7 @@ export default function Header() {
             bg-theme-background dark:bg-theme-background-dark
             border-theme-divider dark:border-theme-divider-dark
             navbar fixed w-full">
-                <div className="nav-container py-4 inline-padding flex justify-between items-center">
+                <div className="nav-container pt-4 pb-2 inline-padding flex justify-between items-center">
                     <a href="/" onClick={() => GTMEvent({eventName: "Link Click", eventVal: "home logo"})}>
                         <CustomImage src="/assets/icons/logo.svg" className="h-14 w-20 cursor-pointer" alt="IQ Locks logo" priority/>
                     </a>
