@@ -1,4 +1,4 @@
-import CustomImage from "@/components/CustomImage"
+import ThemeSwitch from "@/components/ThemeSwitch"
 import CustomSvg from "@/components/CustomSvg"
 
 export default function QuickLinkSection() {
@@ -70,6 +70,10 @@ export default function QuickLinkSection() {
                     hover:content-youtube-orange
                     dark:content-youtube-dark
                     dark:hover:content-youtube-orange" alt="youtube logo link"/>
+                </div>
+                <div className="flex flex-col space-y-2 pb-8 md:flex-row justify-between">
+                    <ThemeSwitch/>
+                    <p>Language</p>
                 </div>
             </div>
         </div>

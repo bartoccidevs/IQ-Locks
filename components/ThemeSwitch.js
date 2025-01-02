@@ -6,7 +6,9 @@ export default function ThemeSwitch() {
 
   return (
     <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+      <p className='text-start'>
       {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+      </p>
     </button>
   );
 }
