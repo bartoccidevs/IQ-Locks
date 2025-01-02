@@ -55,9 +55,21 @@ export default function QuickLinkSection() {
                     hover:content-twitter-orange
                     dark:content-twitter-dark
                     dark:hover:content-twitter-orange" alt="twitter logo link"/>
-                    <CustomSvg src="/assets/icons/facebook.svg" className="social-quicklink" alt="facebook logo link"/>
-                    <CustomSvg src="/assets/icons/linkedin.svg" className="social-quicklink" alt="linked in logo link"/>
-                    <CustomSvg src="/assets/icons/youtube.svg" className="social-quicklink" alt="youtube logo link"/>
+                    <CustomSvg src="/assets/icons/facebook.svg" className="social-quicklink
+                    content-facebook 
+                    hover:content-facebook-orange
+                    dark:content-facebook-dark
+                    dark:hover:content-facebook-orange" alt="facebook logo link"/>
+                    <CustomSvg src="/assets/icons/linkedin.svg" className="social-quicklink
+                    content-linkedin 
+                    hover:content-linkedin-orange
+                    dark:content-linkedin-dark
+                    dark:hover:content-linkedin-orange" alt="linked in logo link"/>
+                    <CustomSvg src="/assets/icons/youtube.svg" className="social-quicklink
+                    content-youtube 
+                    hover:content-youtube-orange
+                    dark:content-youtube-dark
+                    dark:hover:content-youtube-orange" alt="youtube logo link"/>
                 </div>
             </div>
         </div>
