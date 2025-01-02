@@ -37,8 +37,8 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <div className={isOpenHamburger ? 'active-hamburger-side-bar translate-y-20 bg-theme-primary':'hamburger-side-bar'}>
-                <ul className="list-none mx-4 md:mx-16 pt-10">
+            <div className={isOpenHamburger ? 'active-hamburger-side-bar translate-y-20 bg-theme-background dark:bg-theme-background-dark':'hamburger-side-bar'}>
+                <ul className="list-none mx-4 md:mx-16 pt-4">
                     {navlinks.flatMap((link, i) => (
                         <li key={i} className="py-2">
                             <a href={link.link} onClick={() => GTMEvent({eventName: "Link Click", eventVal: `${link.lable} page link`})} className="text-theme-text-contrast text-3xl font-bold">
