@@ -8,7 +8,7 @@ const formFields = [
 
 export default function RequestForm() {
     return( 
-        <form className="bg-theme-background py-8 px-4 md:px-10 space-y-3 flex flex-col rounded h-full border-2 border-theme-primary">
+        <form className="bg-theme-background py-8 px-4 md:px-10 space-y-3 flex flex-col rounded h-full border-2 border-theme-background-dark text-theme-background-dark">
             {formFields.map((field,i) => (
                 <FormField 
                 fieldTitle={field.fieldTitle}
@@ -28,25 +28,25 @@ const FormField = ({ fieldTitle, fieldType, fieldName, fieldLabel }) => {
     if (fieldType == "text") {
         return (
             <div className="space-y-1 w-full">
-                <label htmlFor={fieldLabel} className="text-theme-primary text-2xl font-semibold capitalize">{fieldTitle}</label>
+                <label htmlFor={fieldLabel} className="text-2xl font-semibold capitalize">{fieldTitle}</label>
                 <textarea 
                 type={fieldType} 
                 name={fieldName} 
                 id={fieldLabel}
-                className="bg-theme-text-contrast rounded w-full p-2 h-32 text-1xl text-theme-primary shadow-inner focus:ring-1 focus:ring-theme-primary resize-y"></textarea>
+                className="bg-theme-form rounded w-full p-2 h-32 text-1xl shadow-inner focus:ring-1 focus:ring-theme-primary resize-y"></textarea>
             </div>
         )
         
     } else {
         return (
             <div className="space-y-1 w-full">
-                <label htmlFor={fieldLabel} className="text-theme-primary text-2xl font-semibold capitalize">{fieldTitle}</label>
+                <label htmlFor={fieldLabel} className="text-2xl font-semibold capitalize">{fieldTitle}</label>
                 <input 
                 type={fieldType} 
                 name={fieldName} 
                 autoComplete="true" 
                 id={fieldLabel}
-                className="bg-theme-text-contrast rounded w-full p-2 text-1xl text-theme-primary shadow-inner focus:ring-1 focus:ring-theme-primary !overflow-x-scroll"></input>
+                className="bg-theme-form rounded w-full p-2 text-1xl shadow-inner focus:ring-1 focus:ring-theme-primary !overflow-x-scroll"></input>
             </div>
         )
     }

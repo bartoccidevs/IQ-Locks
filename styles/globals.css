@@ -29,7 +29,7 @@
   --theme-secondary-dark: #6b7480;
   --theme-accent: #65c4e2;
   --theme-accent-dark: #1d7d9a;
-  --theme-form: #879cb8;
+  --theme-form: #dce8f9;
   --theme-form-dark: #879cb8;
   --theme-divider: rgb(72, 75, 80);
   --theme-divider-dark: #20252C;
@@ -72,6 +72,8 @@ body {
 }
 .main-page {
   min-height: calc(100vh - 5rem);
+}
+.home-page {
   padding-top: 5.5rem;
 }
 /* BASE SETTING END */
@@ -161,7 +163,8 @@ footer .keen-slider {
 /* HOVERABLES START */
 .hovering-phone, .hovering-email{
   transition: all 0.5s ease-in-out;
-  border: 0.1rem solid var(--theme-background);
+  border-width: 0.1rem;
+  border-style: solid;
 }
 /* HOVERABLES END */
 

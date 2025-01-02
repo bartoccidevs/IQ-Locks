@@ -12,7 +12,9 @@ export default function ContactPage() {
 
     return (
         <>
-        <h1 className="text-4xl md:text-6xl font-bold py-4 pt-24 inline-padding md:pb-4 bg-theme-primary text-theme-text-contrast">Contact Us</h1>
+        <h1 className="text-4xl md:text-6xl font-bold py-4 pt-24 inline-padding md:pb-4 text-theme-text-contrast
+        bg-theme-background dark:bg-theme-background-dark
+        ">Contact Us</h1>
         <div className="main-page bg-theme-background md:pt-6 inline-padding">
             <Head>
                 <title>{siteData.name} | Contact Us</title>
@@ -30,8 +32,8 @@ export default function ContactPage() {
                     alt="man picking lock"
                     priority/>
                     <h2 className="text-4xl md:text-5xl font-bold text-theme-primary">Need To Contact a Locksmith?</h2>
-                    <p className="text-2xl">Looking for a local locksmith? Whether you need help with an emergency lockout, key replacement or lock installation, our professional locksmiths are committed to providing you with great results and making sure. We're here to help:</p>
-                    <div className="flex flex-col space-y-4 py-8">
+                    <p className="text-2xl text-black">Looking for a local locksmith? Whether you need help with an emergency lockout, key replacement or lock installation, our professional locksmiths are committed to providing you with great results and making sure. We're here to help:</p>
+                    <div className="flex flex-col space-y-4 py-4">
                         <Link href={`tel:${siteData.phone}`} aria-label="Click to call the locksmith" className="max-w-fit">
                             <div className="flex space-x-4 items-center max-w-fit"> 
                                 <div className="h-10 w-10">

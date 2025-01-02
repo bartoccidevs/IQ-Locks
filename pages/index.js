@@ -7,7 +7,7 @@ import metaData from "@/data/metaData/homePage";
 
 export default function Home(props) {
   return (
-    <div className="main-page bg-theme-background">
+    <div className="main-page home-page bg-theme-background">
       <Head>
         <title>{metaData.title}</title>
         <meta name="description" content={metaData.description} />
