@@ -8,7 +8,8 @@ export default function HomepageHero({ data }) {
 
     return (
         <>
-            <div className="bg-theme-secondary text-center">
+            <div className="text-center pt-20
+            ">
                 <div className="w-screen relative overflow-hidden" >
                     <CustomImage 
                     width={width}
@@ -24,9 +25,11 @@ export default function HomepageHero({ data }) {
                                 Locks
                             </h1>
                             <p className="text-base font-semibold pb-6">A New York City Based Locksmith</p>
-                            <a href="/contact" onClick={() => GTMEvent({eventName: "Click Link", eventVal: "contact us"})}>
-                                <button className="px-4 md:px-8 py-4 text-xl font-bold cta-button-orange" >Get in Touch</button>
-                            </a>
+                            <Link href="/contact" onClick={() => GTMEvent({eventName: "Click Link", eventVal: "contact us"})} legacyBehavior>
+                                <a>
+                                    <button className="px-4 md:px-8 py-4 text-xl font-bold cta-button-orange" >Get in Touch</button>
+                                </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 import ThemeSwitch from "@/components/ThemeSwitch"
 import CustomSvg from "@/components/CustomSvg"
+import Link from "next/link"
 
 export default function QuickLinkSection() {
     return (
@@ -34,10 +35,18 @@ export default function QuickLinkSection() {
                     Resources
                 </h2>
                 <div className="space-y-1 text-theme-text-contrast text-1xl">
-                    <p>Home</p>
+                    <Link legacyBehavior href="/">
+                        <a>
+                            <p>Home</p>
+                        </a>
+                    </Link>
                     <p>About</p>
                     <p>Our Blog</p>
-                    <p>Contact</p>
+                    <Link legacyBehavior href="/contact">
+                        <a>
+                            <p>Contact</p>
+                        </a>
+                    </Link>
                 </div>
             </div>
             <div>

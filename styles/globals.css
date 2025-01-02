@@ -73,11 +73,7 @@ body {
 .main-page {
   min-height: calc(100vh - 5rem);
 }
-.home-page {
-  padding-top: 5.5rem;
-}
 /* BASE SETTING END */
-
 
 /* REUSABLE START */
 .cta-button-orange {

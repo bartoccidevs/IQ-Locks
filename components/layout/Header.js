@@ -2,7 +2,6 @@ import Link from "next/link";
 import CustomImage from "../CustomImage";
 import GTMEvent from "../GTMEvent";
 import { useState } from "react"
-import ThemeSwitch from "../ThemeSwitch";
 
 const navlinks = [
     { lable: 'Home', link: "/" },
@@ -24,9 +23,11 @@ export default function Header() {
             border-theme-divider dark:border-theme-divider-dark
             navbar fixed w-full">
                 <div className="nav-container pt-4 pb-2 inline-padding flex justify-between items-center">
-                    <a href="/" onClick={() => GTMEvent({eventName: "Link Click", eventVal: "home logo"})}>
-                        <CustomImage src="/assets/icons/logo.svg" className="h-14 w-20 cursor-pointer" alt="IQ Locks logo" priority/>
-                    </a>
+                    <Link href="/" onClick={() => GTMEvent({eventName: "Link Click", eventVal: "home logo"})} legacyBehavior>
+                        <a>
+                            <CustomImage src="/assets/icons/logo.svg" className="h-14 w-20 cursor-pointer" alt="IQ Locks logo" priority/>
+                        </a>
+                    </Link>
                     <div onClick={handleHamburgerClick} className="cursor-pointer">
                         <div className="lg:hidden
                         hamburger-menu bg-theme-text dark:bg-theme-text-dark
@@ -40,10 +41,9 @@ export default function Header() {
                 <ul className="list-none mx-4 md:mx-16 pt-10">
                     {navlinks.flatMap((link, i) => (
                         <li key={i} className="py-2">
-                            <a className="text-theme-text-contrast text-3xl font-bold"
-                            href={link.link}
-                            onClick={() => GTMEvent({eventName: "Link Click", eventVal: `${link.lable} page link`})}
-                            >{link.lable}</a>
+                            <a href={link.link} onClick={() => GTMEvent({eventName: "Link Click", eventVal: `${link.lable} page link`})} className="text-theme-text-contrast text-3xl font-bold">
+                                {link.lable}
+                            </a>
                         </li>
                     ))}
                 </ul>
