@@ -25,10 +25,8 @@ export default function HomepageHero({ data }) {
                                 Locks
                             </h1>
                             <p className="text-base font-semibold pb-6">A New York City Based Locksmith</p>
-                            <Link href="/contact" onClick={() => GTMEvent({eventName: "Click Link", eventVal: "contact us"})} legacyBehavior>
-                                <a>
-                                    <button className="px-4 md:px-8 py-4 text-xl font-bold cta-button-orange" >Get in Touch</button>
-                                </a>
+                            <Link href="/contact">
+                                <button className="px-4 md:px-8 py-4 text-xl font-bold cta-button-orange" >Get in Touch</button>
                             </Link>
                         </div>
                     </div>

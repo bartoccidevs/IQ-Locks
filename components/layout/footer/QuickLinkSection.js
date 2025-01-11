@@ -35,17 +35,13 @@ export default function QuickLinkSection() {
                     Resources
                 </h2>
                 <div className="space-y-1 text-theme-text-contrast text-1xl">
-                    <Link legacyBehavior href="/">
-                        <a>
-                            <p>Home</p>
-                        </a>
+                    <Link href="/">
+                        <p>Home</p>
                     </Link>
                     <p>About</p>
                     <p>Our Blog</p>
-                    <Link legacyBehavior href="/contact">
-                        <a>
-                            <p>Contact</p>
-                        </a>
+                    <Link href="/contact">
+                        <p>Contact</p>
                     </Link>
                 </div>
             </div>
@@ -81,8 +77,8 @@ export default function QuickLinkSection() {
                     dark:hover:content-youtube-orange" alt="youtube logo link"/>
                 </div>
                 <div className="flex flex-col space-y-2 pb-8 md:flex-row justify-between">
-                    <ThemeSwitch/>
-                    <p>Language</p>
+                    {/* <ThemeSwitch/>
+                    <p>Language</p> */}
                 </div>
             </div>
         </div>

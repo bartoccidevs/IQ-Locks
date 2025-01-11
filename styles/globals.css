@@ -51,9 +51,16 @@
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: NotoSansThai;
+  line-height: 103% !important;
+}
+h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
 }
 p {
   font-family: Labrada;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 /* FONTS END */
 
@@ -62,7 +69,7 @@ p {
   padding: 0px;
   margin: 0px;
   font-family: NotoSansThai;
-  line-height: 102% !important;
+  /* line-height: 103% !important; */
 }
 body {
   background-color: var(--theme-primary);
@@ -72,6 +79,9 @@ body {
 }
 .main-page {
   min-height: calc(100vh - 5rem);
+}
+.page-section {
+  padding: 4rem;
 }
 /* BASE SETTING END */
 
@@ -88,6 +98,19 @@ body {
   box-shadow: inset 10px 5px 5px #E18D3D;
   transform: scale(103%) rotate(-2deg);
   background-color: #e7a668;
+}
+.cta-button-gray {
+  box-shadow: inset 10px 5px 5px #000000;
+  background-color: var(--theme-background-dark);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  color: white;
+  border-radius: 0.5rem;
+}
+.cta-button-gray:hover {
+  box-shadow: inset 10px 5px 5px #303030;
+  transform: scale(103%) rotate(2deg);
+  background-color: #3e3e3e;
 }
 /* REUSABLE END */
 
@@ -158,7 +181,7 @@ footer .keen-slider {
 
 /* HOVERABLES START */
 .hovering-phone, .hovering-email{
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-width: 0.1rem;
   border-style: solid;
 }
@@ -183,12 +206,30 @@ footer .keen-slider {
 .homepage-hero-blur {
   background-color: #03091193;
 }
+.service-area {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.service-block {
+  transition: all 0.5s ease-in-out;
+}
+.service-block:hover {
+  transform: scale(107%) rotate(1deg);
+  background-color: white;
+  color: black;
+}
+.action-photo {
+  width: 50vw;
+  height: 30rem;
+}
 /* HOMEPAGE END */
 
 /* RESPONSIVE SIZES */
 /* sm */
 @media (max-width: 640px) {
-
+  .action-photo {
+    height: 25rem;
+  }
 }
 
 /* md */
@@ -196,11 +237,17 @@ footer .keen-slider {
   .inline-padding {
     padding-inline: 1rem;
   }
+  .page-section {
+    padding: 4rem 1rem 4rem 1rem;
+  }
   .hero-image {
-    /* zoom: 140%; */
     height: 17.5rem;
     object-position: right 0% bottom 0%;
     animation: animatedBackground 4s linear infinite alternate;
+  }
+  .action-photo {
+    width: 100vw;
+    height: 20rem;
   }
   @keyframes animatedBackground {
     from {
@@ -214,5 +261,9 @@ footer .keen-slider {
 
 /* lg */
 @media (max-width: 1024px) {
+  .action-photo {
+    width: 100vw;
+    height: 20rem;
+  }
 
 }

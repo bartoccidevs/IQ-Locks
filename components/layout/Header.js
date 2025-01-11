@@ -23,10 +23,8 @@ export default function Header() {
             border-theme-divider dark:border-theme-divider-dark
             navbar fixed w-full">
                 <div className="nav-container pt-4 pb-2 inline-padding flex justify-between items-center">
-                    <Link href="/" onClick={() => GTMEvent({eventName: "Link Click", eventVal: "home logo"})} legacyBehavior>
-                        <a>
-                            <CustomImage src="/assets/icons/logo.svg" className="h-14 w-20 cursor-pointer" alt="IQ Locks logo" priority/>
-                        </a>
+                    <Link href="/">
+                        <CustomImage src="/assets/icons/logo.svg" className="h-14 w-20 cursor-pointer" alt="IQ Locks logo" priority/>
                     </Link>
                     <div onClick={handleHamburgerClick} className="cursor-pointer">
                         <div className="lg:hidden
@@ -41,9 +39,9 @@ export default function Header() {
                 <ul className="list-none mx-4 md:mx-16 pt-4">
                     {navlinks.flatMap((link, i) => (
                         <li key={i} className="py-2">
-                            <a href={link.link} onClick={() => GTMEvent({eventName: "Link Click", eventVal: `${link.lable} page link`})} className="text-theme-text-contrast text-3xl font-bold">
+                            <Link href={link.link} className="text-theme-text-contrast text-3xl font-bold">
                                 {link.lable}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>

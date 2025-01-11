@@ -45,6 +45,9 @@ module.exports = {
         'youtube': 'url("/assets/icons/youtube.svg")',
         'youtube-orange': 'url("/assets/icons/youtube-orange.svg")',
         'youtube-dark': 'url("/assets/icons/youtube-dark.svg")',
+      },
+      width: {
+        '1/8': '12.5%'
       }
     },
   },
