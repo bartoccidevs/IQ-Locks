@@ -12,12 +12,11 @@ export default function HomepageHero({ data }) {
             ">
                 <div className="w-screen relative overflow-hidden" >
                     <CustomImage 
-                    width={width}
-                    height={0}
+                    lcp={true}
                     src="/assets/photos/new-york-city-skyline-tall.jpeg" 
                     className="w-full absolute hero-image"
                     alt="New york city skyline"
-                    priority/>
+                    />
                     <div className="homepage-hero-blur backdrop-blur-sm w-full flex items-center justify-center ga-tester">
                         <div className="inline-padding text-white py-6 md:py-4 my-8 md:my-24 space-y-8">
                             <h1 className="text-3.5xl md:text-6xl font-bold">
