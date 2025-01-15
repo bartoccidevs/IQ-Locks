@@ -44,10 +44,12 @@
 @font-face {
   font-family: 'NotoSansThai';
   src: url('/fonts/NotoSansThai.ttf') format('truetype');
+  font-display: optional;
 }
 @font-face {
   font-family: "Labrada";
   src: url('/fonts/Labrada-VariableFont_wght.ttf') format('truetype');
+  font-display: optional;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: NotoSansThai;
@@ -70,9 +72,6 @@ p {
   margin: 0px;
   font-family: NotoSansThai;
   /* line-height: 103% !important; */
-}
-body {
-  background-color: var(--theme-primary);
 }
 .inline-padding {
   padding-inline: 4rem;
@@ -194,7 +193,6 @@ footer .keen-slider {
   object-position: right 50% bottom 0%;
   animation: animatedBackground 15s linear infinite alternate;
 }
-
 @keyframes animatedBackground {
   from {
     object-position: right 50% bottom 100%;

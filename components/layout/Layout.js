@@ -7,7 +7,10 @@ export default function Layout({ children }) {
     return (
         <>
         <Header />
-        {children}
+        <div className="h-20 bg-theme-background-dark"></div>
+        <main className="min-h-page bg-theme-page">
+            {children}
+        </main>
         <Footer />
         <Hoverables />
         </>

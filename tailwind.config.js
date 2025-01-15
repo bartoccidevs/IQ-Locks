@@ -48,6 +48,9 @@ module.exports = {
       },
       width: {
         '1/8': '12.5%'
+      },
+      minHeight: {
+        "page": "calc(100vh - 5rem)"
       }
     },
   },

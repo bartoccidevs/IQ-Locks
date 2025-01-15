@@ -11,8 +11,8 @@ export default function ContactPage() {
     const { width } = useWindowDimensions();
 
     return (
-        <>
-        <h1 className="text-4xl md:text-6xl font-bold py-4 pt-24 inline-padding md:pb-4 text-theme-text-contrast
+        <main>
+        <h1 className="text-4xl md:text-6xl font-bold py-4 inline-padding md:pb-4 text-theme-text-contrast
         bg-theme-background dark:bg-theme-background-dark
         ">Contact Us</h1>
         <div className="main-page bg-theme-background md:pt-6 inline-padding">
@@ -61,6 +61,6 @@ export default function ContactPage() {
                 </div>
             </div>
         </div>
-        </>
+        </main>
     )
 }

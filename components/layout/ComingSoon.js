@@ -7,7 +7,7 @@ export default function ComingSoon() {
             <CustomImage 
             width={100}
             src="/assets/icons/logo.svg"
-            className="w-3/5"
+            className="w-1/3"
             />
             <h1 className="text-6xl font-semibold py-4">Page Coming Soon</h1>
             <Link href="/">
