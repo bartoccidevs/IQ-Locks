@@ -44,12 +44,12 @@
 @font-face {
   font-family: 'NotoSansThai';
   src: url('/fonts/NotoSansThai.ttf') format('truetype');
-  font-display: optional;
+  font-display: swap;
 }
 @font-face {
   font-family: "Labrada";
   src: url('/fonts/Labrada-VariableFont_wght.ttf') format('truetype');
-  font-display: optional;
+  font-display: swap;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: NotoSansThai;
