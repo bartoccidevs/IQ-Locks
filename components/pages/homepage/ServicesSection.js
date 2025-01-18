@@ -36,12 +36,12 @@ function ServiceDiv({ title, description, img, imgAlt}) {
         <div className="w-full md:w-1/2 lg:w-1/3 p-4">
             <div className="border-black border rounded cursor-pointer service-block bg-theme-primary text-white">
                 <h3 className="text-2xl font-semibold py-2 px-1">{title}</h3>
-                <CustomImage 
-                width={width/4}
-                height={0}
-                src={img}
-                className="w-full h-60"
-                alt={imgAlt}/>
+                <div className="flex h-60 w-full">
+                    <CustomImage 
+                    src={img}
+                    alt={imgAlt}
+                    testImg={true}/>
+                </div>
             </div>
         </div>
     )

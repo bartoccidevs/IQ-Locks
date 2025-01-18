@@ -29,14 +29,12 @@ export default function BrandsSection() {
 function BrandDiv({ img, imgAlt }) {
     const { width } = useWindowDimensions();
     return (
-        <div className="flex justify-center w-1/3 md:w-1/6 lg:w-1/8 p-2">
+        <div className="flex justify-center w-1/3 md:w-1/6 lg:w-1/8 relative aspect-video p-2">
             <CustomImage 
-            width={50}
-            height={0}
-            sizes="(min-width: 100px)"
+            testImg = {true}
             src={img}
             alt={imgAlt}
-            className="border border-black w-full object-contain"/>
+            className="border border-black"/>
         </div>
     )
 }
