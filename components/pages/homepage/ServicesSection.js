@@ -40,7 +40,6 @@ function ServiceDiv({ title, description, img, imgAlt}) {
                 width={width/4}
                 height={0}
                 src={img}
-                sizes="(min-width: 100px)"
                 className="w-full h-60"
                 alt={imgAlt}/>
             </div>

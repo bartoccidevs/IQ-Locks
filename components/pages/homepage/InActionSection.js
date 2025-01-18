@@ -1,14 +1,19 @@
 import CustomImage from "@/components/CustomImage"
 import Link from "next/link"
 
+import useWindowDimensions from "@/components/useWindowDimensions"
+
+// data
 import { PortfolioSection as data } from "@/data/pages/HomePageData"
 
 export default function InActionSection() {
+    const { width } = useWindowDimensions();
+
     return (
         <div className="flex flex-col lg:flex-row bg-white text-black">
             <div className="flex justify-center bg-white">
                 <CustomImage 
-                width={500}
+                width={width}
                 src={data.img}
                 className="action-photo object-cover"
                 alt={data.imgAlt}/>
