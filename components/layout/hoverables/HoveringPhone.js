@@ -1,6 +1,6 @@
 import CustomImage from "@/components/CustomImage";
 import Link from "next/link";
-import siteData from "@/data/site-identity";
+import { siteCore } from "@/data/siteData";
 
 export default function HoveringPhone() {
     function handlePhoneClick() {
@@ -8,7 +8,7 @@ export default function HoveringPhone() {
     }
 
     return (
-        <Link href={`tel:${siteData.phone}`} aria-label="Click to call the locksmith">
+        <Link href={`tel:${siteCore.phone}`} aria-label="Click to call the locksmith">
             <div className="md:hidden hovering-phone bg-theme-primary fixed bottom-4 right-4 rounded-full pointer-events-auto hover:scale-110
             border-theme-background-dark
             dark:border-theme-background

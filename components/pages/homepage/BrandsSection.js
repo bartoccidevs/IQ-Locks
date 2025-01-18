@@ -1,15 +1,16 @@
 import CustomImage from "@/components/CustomImage"
-import data from "@/data/pages/homepage/data"
 import useWindowDimensions from "@/components/useWindowDimensions"
 import Link from "next/link"
+
+import { BrandsSection as data } from "@/data/pages/HomePageData"
 
 export default function BrandsSection() {
     return (
         <div className="inline-padding text-center bg-gray-300 text-black py-8 page-section">
-            <h2 className="">{data.brandsSection.header}</h2>
-            <p className="py-4">{data.brandsSection.subHeader}</p>
+            <h2 className="">{data.header}</h2>
+            <p className="py-4">{data.subHeader}</p>
             <div className="w-full flex flex-wrap justify-center py-4 md:py-8">
-                {data.brandsSection.brands.map((brand, i) => {
+                {data.brands.map((brand, i) => {
                     return (
                         <BrandDiv 
                             img={brand.img} 

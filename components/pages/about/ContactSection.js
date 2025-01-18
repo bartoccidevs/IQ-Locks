@@ -1,4 +1,4 @@
-import siteData from "@/data/site-identity"
+import { siteCore } from "@/data/siteData"
 import Link from "next/link"
 
 export default function ContactSection() {
@@ -14,7 +14,7 @@ export default function ContactSection() {
                     on the road quickly and safely. Your peace of mind is our top 
                     priority. Call Rolon Mobile Truck Repair – where help is always 
                     on the way!</p>
-                <Link href={`tel:${siteData.phone}`} aria-label="Click to contact the locksmith">
+                <Link href={`tel:${siteCore.phone}`} aria-label="Click to contact the locksmith">
                     <button className="px-4 md:px-8 py-4 my-2 text-xl font-bold cta-button-orange">
                         Get Help Now
                     </button>

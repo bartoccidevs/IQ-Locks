@@ -1,17 +1,19 @@
-import data from "@/data/pages/homepage/data"
 import CustomImage from "@/components/CustomImage"
 import useWindowDimensions from "@/components/useWindowDimensions"
 import Link from "next/link"
+
+import  { services }  from "@/data/siteData.js";
+import { ServicesSection as data } from "@/data/pages/HomePageData";
 
 export default function ServicesSection() {
     return (
         <div className="text-center flex flex-col items-center page-section rounded-3xl bg-white service-area">
             <Link href="/services">
-                <h2 className="text-black">{data.servicesSection.header}</h2>
+                <h2 className="text-black">{data.header}</h2>
             </Link>
             <div className="border border-black bg-black h-1 w-32 my-4 rounded-full"></div>
             <div className="w-full flex flex-wrap justify-center border border-grey rounded">
-                {data.servicesSection.services.map((service, i) => {
+                {services.map((service, i) => {
                     return (
                         <ServiceDiv 
                         title={service.title} 

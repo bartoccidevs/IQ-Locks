@@ -2,8 +2,7 @@ import CustomImage from "@/components/CustomImage"
 import useWindowDimensions from "@/components/useWindowDimensions"
 import Link from "next/link";
 
-export default function HomepageHero({ data }) {
-
+export default function HomepageHero() {
     return (
         <>
             <div className="text-center">

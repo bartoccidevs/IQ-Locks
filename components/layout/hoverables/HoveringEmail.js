@@ -1,6 +1,6 @@
 import CustomImage from "@/components/CustomImage"
 import Link from "next/link"
-import siteData from "@/data/site-identity"
+import { siteCore } from "@/data/siteData.js"
 
 export default function HoveringEmail() {
     function handlePhoneClick() {
@@ -8,7 +8,7 @@ export default function HoveringEmail() {
     }
 
     return (
-        <Link href={`mailto: ${siteData.email}`} aria-label="Click to open an email to the locksmith">
+        <Link href={`mailto: ${siteCore.email}`} aria-label="Click to open an email to the locksmith">
             <div className="hidden md:flex hovering-email bg-theme-primary fixed bottom-10 right-10 rounded-full pointer-events-auto hover:scale-110
             border-theme-background-dark
             dark:border-theme-background
