@@ -17,10 +17,10 @@ function TeamMember() {
             width={100} 
             height={100} 
             className="w-full aspect-square rounded"/>
-            <div className="py-4">
-                <h3 className="text-theme-primary text-3xl font-semibold">Itamar Omayen</h3>
+            {/* <div className="py-4">
+                <h3 className="text-theme-primary text-3xl font-semibold">Itamar Lax</h3>
                 <p className="">Owner / Locksmith</p>
-            </div>
+            </div> */}
         </div>
     )
 }
