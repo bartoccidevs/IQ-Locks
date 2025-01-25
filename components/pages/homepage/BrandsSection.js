@@ -1,7 +1,6 @@
 import CustomImage from "@/components/CustomImage"
 import useWindowDimensions from "@/components/useWindowDimensions"
 import Link from "next/link"
-
 import { BrandsSection as data } from "@/data/pages/HomePageData"
 
 export default function BrandsSection() {
